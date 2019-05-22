@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_photo"
+            android:layout_width="150dp"
+            android:layout_marginBottom="60dp"
+            android:src="@mipmap/add_photo_round"
+            android:layout_height="150dp"
+    />
+
+
+    <TextView
+            android:id="@+id/tvfirstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="First Name : "
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+    />
+
+    <EditText
+            android:id="@+id/etfirstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Your first name"
+            android:layout_margin="10dp"
+    />
+
+    <TextView
+            android:id="@+id/tvlastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Last Name :"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+    />
+
+    <EditText
+            android:id="@+id/etlastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your Surname"
+            android:layout_margin="10dp"
+    />
+
+
+    <TextView
+            android:id="@+id/tvDob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date of Birth :"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+    />
+
+    <EditText
+            android:id="@+id/etdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="SELECT YOUR DOB"
+            android:layout_margin="10dp"/>
+
+
+    <Button
+            android:id="@+id/continue_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Continue"
+            android:layout_gravity="bottom|center"
+            android:layout_margin="10dp"
+    />
+
+
+</LinearLayout>
+

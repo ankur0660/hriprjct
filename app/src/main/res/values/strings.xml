@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">DemoApp</string>
+
+    <string-array name="workers_list">
+        <item>Maid</item>
+        <item>Carpenter</item>
+        <item>Mason(HouseLabour)</item>
+        <item>Plumber</item>
+        <item>Architects(A/C servicing etc.)</item>
+        <item>Electrician</item>
+        <item>Babysitters</item>
+    </string-array>
+
+    <string-array name="States">
+        <item>Choose a State</item>
+    </string-array>
+
+    <string-array name="cities">
+        <item>Choose a city</item>
+    </string-array>
+
+    <color name="myColor">#265658</color>
+    <string name="title_activity_intro">IntroActivity</string>
+    <string name="title_activity_employer_main">EmployerMainActivity</string>
+
+</resources>

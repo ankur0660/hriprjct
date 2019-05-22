@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:gravity="center"
+              android:background="@drawable/splsh"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+     <Button
+            android:text="I am a Worker"
+            android:background="@drawable/new_orange_btn_round_corner_normal"
+            android:textColor="#FFFFFF"
+            android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+            android:textColorHighlight="#448AFF"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/worker_button"/>
+
+    <Button
+            android:text="I am an Employer"
+            android:background="@drawable/new_orange_btn_round_corner_normal"
+
+            android:textColor="#FFFFFF"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColorHighlight="#448AFF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/employer_button"/>
+
+</LinearLayout>

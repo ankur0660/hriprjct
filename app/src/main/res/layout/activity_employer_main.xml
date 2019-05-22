@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Activities.EmployerMainActivity"
+        android:orientation="vertical"
+>
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <android.support.v7.widget.AppCompatEditText
+                style="@style/FloatingLabelEditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:hint="Choose Your State"
+                android:id="@+id/etStates"
+                android:layout_margin="6dp"
+                android:inputType="none"
+        />
+
+        <android.support.v7.widget.AppCompatEditText
+                style="@style/FloatingLabelEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Choose Your City"
+                android:layout_marginLeft="15dp"
+                android:id="@+id/etCities"
+                android:layout_margin="6dp"
+                android:inputType="none"
+
+        />
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+        <android.support.v7.widget.AppCompatEditText
+                style="@style/FloatingLabelEditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:hint="What are you looking for ?"
+                android:id="@+id/etcategory"
+                android:layout_margin="6dp"
+                android:inputType="none"
+
+        />
+
+        <android.support.v7.widget.AppCompatButton
+                android:background="@drawable/new_orange_btn_round_corner_normal"
+                android:textColor="#FFFFFF"
+                android:id="@+id/search_button"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Find"
+        />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>

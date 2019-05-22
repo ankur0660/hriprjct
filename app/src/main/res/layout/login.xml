@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+>
+    <LinearLayout
+            android:layout_marginTop="150dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+    >
+
+        <TextView
+                android:id="@+id/tvPhoneNumber_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter Your Phone Number :"
+                android:textStyle="bold"
+                android:layout_margin="8dp"
+        />
+
+
+        <EditText
+                android:id="@+id/etPhoneNumber_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:inputType="number"
+        />
+
+        <android.support.v7.widget.AppCompatButton
+                style="@style/FloatingLabelEditText"
+                android:background="@drawable/new_orange_btn_round_corner_normal"
+                android:id="@+id/sendotp"
+                android:layout_width="136dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="SEND OTP"
+                android:layout_margin="10dp"
+        />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

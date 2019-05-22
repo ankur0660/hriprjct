@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <LinearLayout
+                android:id="@+id/layout_lin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerInParent="true"
+        >
+
+
+            <TextView
+                    android:text="Type your Work Category :"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/category"
+                    android:layout_margin="10dp"
+            />
+
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/categories"
+                    android:hint="Choose Your Job"
+                    android:layout_margin="10dp"
+            />
+
+            <TextView
+                    android:id="@+id/tvstreet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Area/Street/Landmark:"
+                    android:layout_margin="10dp"
+                    android:textStyle="bold"
+            />
+
+            <EditText
+                    android:id="@+id/etstreet"
+                    android:inputType="textMultiLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:hint="Your Street Address:"
+            />
+
+            <TextView
+                    android:text="State :"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvState"
+                    android:layout_margin="10dp"
+                    android:textStyle="bold"
+            />
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Choose Your State"
+                    android:id="@+id/etStates"
+                    android:layout_margin="10dp"
+            />
+
+            <TextView
+                    android:text="City :"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvCity"
+                    android:layout_margin="10dp"
+                    android:textStyle="bold"
+            />
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etCities"
+                    android:hint="Choose Your City"
+                    android:layout_margin="10dp"
+            />
+
+
+        </LinearLayout>
+
+
+        <Button
+                android:text="Continue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button_continue"
+                android:layout_below="@+id/layout_lin"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+        />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:visibility="gone"
+    >
+        <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminate="true"
+                android:layout_centerInParent="true"
+        />
+    </RelativeLayout>
+
+</FrameLayout>

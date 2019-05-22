@@ -1,0 +1,48 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">
+            @color/White
+        </item>
+    </style>
+    <style name="NoActionBar" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+    <style name="FloatingLabelEditText">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:fontFamily">@font/gibson_regular</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">18dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:longClickable">false</item>
+        <item name="android:textSize">18sp</item>
+        <!-- underline text color -->
+        <!--  <item name="met_typeface">fonts/Montserrat-Bold.ttf</item>  &lt;!&ndash; text font type &ndash;&gt;
+          <item name="met_accentTypeface">fonts/SFNSDisplay-Regular.ttf</item>  &lt;!&ndash; hint font type  &ndash;&gt;-->
+    </style>
+    <style name="edit_text_otp">
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:maxLength">1</item>
+        <item name="android:background">@drawable/otp_box_background</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:inputType">number</item>
+        <item name="android:layout_margin">15dp</item>
+        <item name="android:layout_weight">0.15</item>
+    </style>
+
+</resources>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true">
+
+        <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvOTP"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Enter the OTP sent to your number :"
+                android:layout_margin="8dp"
+        />
+        <LinearLayout
+                android:id="@+id/otpContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+            <EditText
+                    android:id="@+id/opt1"
+                    style="@style/edit_text_otp"
+                    tools:ignore="LabelFor" />
+
+            <EditText
+                    android:id="@+id/opt2"
+                    style="@style/edit_text_otp"
+                    tools:ignore="LabelFor" />
+
+            <EditText
+                    android:id="@+id/opt3"
+                    style="@style/edit_text_otp"
+                    tools:ignore="LabelFor" />
+
+            <EditText
+                    android:id="@+id/opt4"
+                    style="@style/edit_text_otp"
+                    tools:ignore="LabelFor" />
+            <EditText
+                    android:id="@+id/opt5"
+                    style="@style/edit_text_otp"
+                    tools:ignore="LabelFor" />
+            <EditText
+                android:id="@+id/opt6"
+                style="@style/edit_text_otp"
+                tools:ignore="LabelFor" />
+        </LinearLayout>
+        <EditText
+                android:visibility="gone"
+                android:id="@+id/etOTP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:inputType="number"
+        />
+
+        <android.support.v7.widget.AppCompatButton
+
+                android:background="@drawable/new_orange_btn_round_corner_normal"
+                style="@style/FloatingLabelEditText"
+                android:id="@+id/log_in"
+                android:layout_width="136dp"
+                android:layout_height="wrap_content"
+                android:text="Continue"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+
+        />
+
+        <TextView
+                android:id="@+id/tvOR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="OR"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+
+        />
+
+        <android.support.v7.widget.AppCompatButton
+                android:backgroundTint="#041c2f"
+                style="@style/FloatingLabelEditText"
+                android:id="@+id/tvChangeNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter another number"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+        />
+
+    </LinearLayout>
+
+</RelativeLayout>

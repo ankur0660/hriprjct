@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+    <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+        <android.support.constraint.ConstraintLayout
+                android:background="#A98FF3"
+                android:layout_width="match_parent"
+                android:layout_height="300dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="130dp"
+                    app:civ_border_color="#C7C7CE"
+                    app:civ_border_width="3dp"
+                    android:src="@mipmap/person_icon_round"
+                    android:scaleType="centerCrop"
+                    android:layout_height="112dp" android:layout_marginBottom="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent" android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.383" app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
+                    app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp" app:layout_constraintHorizontal_bias="0.498"
+                    android:id="@+id/detail_profile_image"/>
+
+            <TextView
+                    android:text="Hariom Sharma"
+                    android:layout_width="386dp"
+                    android:layout_height="49dp"
+                    android:id="@+id/name" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp" app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginLeft="8dp" android:layout_marginStart="8dp" android:layout_marginBottom="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent" android:layout_marginTop="8dp"
+                    app:layout_constraintHorizontal_bias="0.444"
+                    app:layout_constraintVertical_bias="0.591"
+                    android:gravity="center"
+                    android:textColor="#505052"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"/>
+
+        </android.support.constraint.ConstraintLayout>
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="150dp">
+
+            <android.support.constraint.ConstraintLayout
+                    android:orientation="horizontal"
+                    android:layout_width="200dp"
+                    android:layout_height="150dp">
+
+                <TextView
+                        android:layout_width="84dp"
+                        android:text="22"
+                        android:hint="Age"
+                        style="@style/FloatingLabelEditText"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                        android:textColor="#505052"
+                        android:layout_height="53dp" android:layout_marginEnd="8dp"
+                        app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="8dp"
+                        android:layout_marginStart="8dp" app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginLeft="8dp" android:layout_marginBottom="8dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.333"
+                        android:id="@+id/tvAge"/>
+                <TextView
+                        android:text="Age"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                        android:layout_width="60dp"
+                        android:textColor="#F09579"
+                        android:layout_height="40dp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp" app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginLeft="8dp" android:layout_marginStart="8dp" android:layout_marginTop="8dp"
+                        app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
+                        app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.403"
+                        app:layout_constraintVertical_bias="0.914"/>
+
+            </android.support.constraint.ConstraintLayout>
+
+            <LinearLayout
+                    android:layout_marginTop="30dp"
+                    android:layout_width="3dp"
+                    android:background="#9A9B99"
+                    android:layout_height="85dp">
+
+            </LinearLayout>
+
+            <android.support.constraint.ConstraintLayout
+                    android:orientation="horizontal"
+                    android:layout_width="200dp"
+                    android:layout_height="150dp">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:text="22 / 10 / 19"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                        android:textColor="#505052"
+                        android:layout_height="53dp" android:layout_marginEnd="8dp"
+                        app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="8dp"
+                        android:layout_marginStart="8dp" app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginLeft="8dp" android:layout_marginBottom="8dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.308" app:layout_constraintHorizontal_bias="0.68"
+                        android:id="@+id/tvdob"/>
+                <TextView
+                        android:text="Date Of Birth"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                        android:layout_width="wrap_content"
+                        android:textColor="#F09579"
+                        android:textStyle="bold"
+                        android:layout_height="40dp"
+                        android:id="@+id/textView3" app:layout_constraintEnd_toEndOf="parent"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp" app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginLeft="8dp" android:layout_marginStart="8dp" android:layout_marginTop="8dp"
+                        app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
+                        app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.548"
+                        app:layout_constraintVertical_bias="0.914"/>
+
+            </android.support.constraint.ConstraintLayout>
+
+
+        </LinearLayout>
+
+        <android.support.constraint.ConstraintLayout
+                android:background="#F9FAF7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Address : "
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                    android:textColor="#F09579"
+                    android:textStyle="bold"
+                    android:layout_height="53dp" android:layout_marginEnd="8dp"
+                    app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="8dp"
+                    android:layout_marginStart="8dp" app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginLeft="8dp" android:layout_marginBottom="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.08" android:id="@+id/textView5"/>
+            <TextView
+                    android:text="Full Address here"
+                    android:gravity="center"
+                    android:layout_width="400dp"
+                    android:textColor="#505052"
+                    android:layout_height="64dp"
+                    android:id="@+id/tvaddress" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp" app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent" android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/textView5" app:layout_constraintHorizontal_bias="0.497"
+                    app:layout_constraintVertical_bias="0.167"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"/>
+
+        </android.support.constraint.ConstraintLayout>
+
+    </LinearLayout>
+    <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+    >
+        <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminate="true"
+                android:layout_centerInParent="true"
+        />
+    </RelativeLayout>
+</FrameLayout>
